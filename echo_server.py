@@ -72,7 +72,9 @@ def server(log_buffer=sys.stderr):
         #       close the server socket and exit from the server function.
         #       Replace the call to `pass` below, which is only there to
         #       prevent syntax problems
-        raise #This may not be enough... need to look into KeyboardInterupt more
+        print "Exiting"
+        sock.close()
+        sys.exit()
 
 
 if __name__ == '__main__':
