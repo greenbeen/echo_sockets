@@ -29,6 +29,9 @@ def client(msg, log_buffer=sys.stderr):
         #
         #       Make sure that you log each chunk you receive.  Use the print
         #       statement below to do it. (The tests expect this log format)
+        
+        #I don't actually use response anywhere, do don't actually need it
+        #Can just use while loop and accept chunk at 16 bytes at time and print to log in loop
         buffsize = 16
         response = ''
         done = False

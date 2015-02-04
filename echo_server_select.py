@@ -76,7 +76,7 @@ def server(log_buffer=sys.stderr):
         #       prevent syntax problems
         print "Exiting"
         sock.close()
-        sys.exit()
+        sys.exit(0)
 
 
 if __name__ == '__main__':
